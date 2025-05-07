@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                font-size: 1.25rem;
+                background-color: #0e1924;
+                color: #fbfaff;
+                -webkit-text-size-adjust: 100%;
+                padding: 1.2rem;
+                margin: 0;   
+            }
+    
+            .content {
+                max-width: 90vw; /* Use viewport width to make it more responsive */
+                overflow-x: auto; 
+                word-wrap: break-word;
+            }
+    
+            .container {
+                display: flex;
+                justify-content: center;    
+                margin-top: 1rem auto 0;
+            }
+    
+            .custom-link {
+                text-decoration: none; /* Bỏ gạch chân */
+                color: yellow; /* Màu chữ */       
+                font-weight: bold;
+            }
+
+            mjx-container[display="inline"] {
+                display: inline;
+                white-space: nowrap; 
+            }
+
+            mjx-container[display="block"] {
+                overflow-x: auto;
+                max-width: 100%;
+            }
+
+
+    
+        </style>
+        <script>
+            window.MathJax = {
+                chtml: {
+                    scale: 0.85 // Adjust this to fit equations better
+                }
+            };
+
+        </script>
+         <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+         
+    </head>
+    
+   
+    
+    <body>
+    
+        <div class="content">
+            <p>{content}</p>
+           
+        </div>
+    
+    </body>
+</html>
+
+
